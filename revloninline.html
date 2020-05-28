@@ -1,4 +1,3063 @@
-<style style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+<style>
+    a {
+        font-family: 'Akzidenzgroteskbq medext', sans-serif;
+        color: #c30606;
+        text-decoration: none;
+    }
+
+    .bodysweet {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: transparent;
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+        font-weight: 400;
+    }
+
+    .div-block {
+        font-size: 80%;
+    }
+
+    .logo {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 90px;
+        min-width: 80%;
+        margin-bottom: 60px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .div-block-2 {
+        width: 80%;
+        height: auto;
+    }
+
+    .sponge2 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .sponge {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 80%;
+        height: 1200px;
+        padding-bottom: 1px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-radius: 1px;
+        background-color: #fff;
+        background-image: url('../images/ribbon.png');
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .h1_thin_100 {
+        margin-top: 46px;
+        margin-bottom: 30px;
+        font-family: 'Akzidenzgroteskbq ligex', sans-serif;
+        color: #000;
+        font-size: 60px;
+        line-height: 65px;
+        font-weight: 100;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .paragraph {
+        width: 75%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        color: #000;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .paragraph.right {
+        width: 95%;
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        text-align: left;
+    }
+
+    .paragraph.left {
+        width: 100%;
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        font-size: 16px;
+        text-align: right;
+    }
+
+    .copyblock {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .copyblock.right {
+        margin-left: 0px;
+        padding-right: 10px;
+        padding-left: 20px;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+    .copyblock.left {
+        padding-right: 20px;
+        padding-left: 10px;
+    }
+
+    .button {
+        min-width: 1px;
+        margin-bottom: 0px;
+        padding: 15px 50px;
+        background-color: #000;
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+        color: #fff;
+        letter-spacing: 2px;
+    }
+
+    .button:hover {
+        background-color: #444042;
+    }
+
+    .button.right {
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+    }
+
+    .button.left {
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        text-align: center;
+    }
+
+    .image {
+        margin-top: 106px;
+        border: 2px solid #000;
+        border-radius: 0px;
+    }
+
+    .div-block-5 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 380px;
+        padding-bottom: 1px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .text {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .sponge-copy {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 80%;
+        height: auto;
+        padding-bottom: 0px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-radius: 1px;
+        background-color: #fff;
+        background-image: url('../images/ribbon.png');
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .popofcolor {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #fff;
+        background-image: url('../images/ribbon.png');
+        background-position: 100% 0%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .image-2 {
+        width: 80%;
+        margin-top: 40px;
+        border: 2px solid #000;
+        background-color: #fff;
+    }
+
+    .text-copy {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .ultra {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .getitby {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #170a0a;
+    }
+
+    .xmasd {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 23px;
+        padding-right: 6px;
+        padding-bottom: 0px;
+        padding-left: 6px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+    .heading-2 {
+        margin-bottom: 0px;
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
+
+    .subhead2 {
+        margin-top: 0px;
+        margin-right: 45px;
+        margin-bottom: 0px;
+        padding-right: 0px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 200;
+        letter-spacing: 2px;
+    }
+
+    .div-block-9 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .heading-3 {
+        margin-right: 62px;
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+
+    .heading-4 {
+        margin-top: 0px;
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+        color: #fff;
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+
+    .container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: auto;
+        max-width: 650px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .ultra2 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #fff;
+        background-image: url('../images/ribbon.png');
+        background-position: 100% 0%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .div-block-10 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 1400px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-image: url('../images/16d4be87-4b5e-4f3d-9b39-645e4604f1e7.jpg');
+        background-position: 50% 0%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .more-is-more {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .step-3 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .grid {
+        height: 1200px;
+        grid-template-areas: "."".""."".";
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        -ms-grid-rows: 5px 90px auto auto;
+        grid-template-rows: 5px 90px auto auto;
+    }
+
+    .div-block-11 {
+        height: 1280px;
+    }
+
+    .div-block-12 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .grid-2 {
+        width: 100%;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas: ".""."".";
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        -ms-grid-rows: auto 0px 700px 0px auto;
+        grid-template-rows: auto 700px auto;
+    }
+
+    .div-block-13 {
+        width: 80%;
+        height: 1500px;
+        border: 1px solid transparent;
+        background-color: #fff;
+        background-image: url('../images/16d4be87-4b5e-4f3d-9b39-645e4604f1e7.jpg');
+        background-position: 50% 0%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .div-block-14 {
+        width: 150%;
+        background-image: url('../images/16d4be87-4b5e-4f3d-9b39-645e4604f1e7.jpg');
+        background-position: 50% 0%;
+        background-repeat: no-repeat;
+    }
+
+    .div-block-15 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .topoverlap {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .grid-3 {
+        width: 100%;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas: ". . ."". . ."". . .";
+        -ms-grid-columns: 1fr 0px 3fr 0px 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
+        -ms-grid-rows: minmax(auto, 143px) 0px auto 0px auto;
+        grid-template-rows: minmax(auto, 143px) auto auto;
+    }
+
+    .paragraph-2 {
+        overflow: hidden;
+        width: 70%;
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .div-block-16 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #fff;
+        text-decoration: none;
+    }
+
+    .image-4 {
+        margin-bottom: 5px;
+    }
+
+    .linka {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+        color: #000;
+        text-align: center;
+        text-decoration: none;
+        -webkit-column-span: none;
+        column-span: none;
+    }
+
+    .div-block-17 {
+        width: 100%;
+    }
+
+    .div-block-18 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 60px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .underlinebox {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 60px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.48);
+    }
+
+    .div-block-19 {
+        margin-top: 52px;
+    }
+
+    .lips-animation {
+        width: 640px;
+        height: 600px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(0, 0, 0, 0.46);
+        background-image: url('../images/lovelips.gif');
+        background-position: 50% 50%;
+        background-size: 680px;
+        background-repeat: no-repeat;
+    }
+
+    .div-block-20 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 640px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .image-6 {
+        margin-top: 0px;
+    }
+
+    .lipsanim {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .akzidenz-thin {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Akzidenzgroteskbq, sans-serif;
+    }
+
+    .image-7 {
+        width: 250px;
+    }
+
+    .kologo {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #000;
+    }
+
+    .image-8 {
+        width: 250px;
+    }
+
+    .image-9 {
+        width: 250px;
+    }
+
+    .paragraph-3 {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+        color: #fffcfc;
+        font-weight: 400;
+    }
+
+    .image-10 {
+        width: 200px;
+    }
+
+    .logos-frame {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .smlogo {
+        width: 35%;
+        height: 2000px;
+    }
+
+    .lglogo-copy {
+        width: 70%;
+        height: 2000px;
+    }
+
+    .image-11 {
+        width: 680px;
+    }
+
+    .eared600 {
+        width: 680px;
+    }
+
+    .image-12 {
+        width: 680px;
+    }
+
+    .image-13 {
+        width: 680px;
+    }
+
+    .image-14 {
+        width: 680px;
+    }
+
+    .heading-5 {
+        font-family: 'Akzidenzgroteskbq ligex', sans-serif;
+    }
+
+    .heading-6 {
+        font-family: 'Akzidenzgroteskbq ligex', sans-serif;
+    }
+
+    .h4-thin-100 {
+        font-family: 'Akzidenzgroteskbq ligex', sans-serif;
+    }
+
+    .heading-7 {
+        font-family: 'Akzidenzgroteskbq ligex', sans-serif;
+    }
+
+    .heading-8 {
+        font-family: 'Akzidenzgroteskbq ligex', sans-serif;
+    }
+
+    .akzidenz-normal {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .h1_300-normal {
+        margin-top: 46px;
+        margin-bottom: 30px;
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+        color: #000;
+        font-size: 60px;
+        line-height: 65px;
+        font-weight: 100;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .h2-normal-300 {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .sweet {
+        margin-top: 46px;
+        margin-bottom: 30px;
+        font-family: 'Akzidenzgroteskbq ligex', sans-serif;
+        color: #fff;
+        font-size: 400%;
+        font-weight: 100;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .h3-normal {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .h4-normal {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+        font-weight: 400;
+    }
+
+    .paragraph-4 {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .paragraph-5 {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .paragraph-6 {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .paragraph-7 {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .paragraph-8 {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .paragraph-9 {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .paragraph-10 {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .paragraph-11 {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .h4-normal-400 {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+        font-weight: 400;
+    }
+
+    .h5-normal {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .h6-normal {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .akzidenz-normal-cont {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Akzidenzgroteskbq, sans-serif;
+    }
+
+    .normal {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Akzidenzgroteskbq, sans-serif;
+    }
+
+    .bold-cont {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Akzidenzgroteskbq, sans-serif;
+    }
+
+    .akzidenz-bold {
+        margin-top: 46px;
+        margin-bottom: 30px;
+        font-family: 'Akzidenzgroteskbq medext', sans-serif;
+        color: #000;
+        font-size: 60px;
+        line-height: 65px;
+        font-weight: 100;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .azkidenz-h2-bold {
+        font-family: 'Akzidenzgroteskbq medext', sans-serif;
+    }
+
+    .h3-normal-copy {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .h3-bold-700 {
+        font-family: 'Akzidenzgroteskbq medext', sans-serif;
+    }
+
+    .h4-bold-700 {
+        font-family: 'Akzidenzgroteskbq medext', sans-serif;
+        font-weight: 400;
+    }
+
+    .h5-bold-700 {
+        font-family: 'Akzidenzgroteskbq medext', sans-serif;
+    }
+
+    .h6-normal-copy {
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .h6-bold-700 {
+        font-family: 'Akzidenzgroteskbq medext', sans-serif;
+    }
+
+    .typographyframe {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .maincont {
+        width: 80%;
+    }
+
+    .paragraph-title {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 80%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .paragraph-13 {
+        padding-right: 90px;
+        padding-left: 90px;
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .paragraph-14 {
+        max-width: 900px;
+        min-width: 320px;
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+    }
+
+    .body-copy {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: transparent;
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+        font-weight: 400;
+    }
+
+    .bodysweet {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #f7f7f7;
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+        font-weight: 400;
+    }
+
+    .image-15 {
+        width: 300px;
+    }
+
+    .image-16 {
+        margin-bottom: 1px;
+    }
+
+    .form-block {
+        width: 70%;
+    }
+
+    .field-label {
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .submit-button {
+        padding: 10px 20px;
+        float: right;
+        background-color: #000;
+        font-size: 10px;
+        text-align: right;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+    }
+
+    .checkbox-label {
+        margin-bottom: 10px;
+        padding-right: 60px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .preference {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding-right: 100px;
+        font-size: 12px;
+    }
+
+    .checkbox-field {
+        margin-top: 10px;
+    }
+
+    .utility-page-wrap {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        max-height: 100%;
+        max-width: 100%;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .utility-page-content {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 260px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .utility-page-form {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+    }
+
+    .div-block-23 {
+        width: 100%;
+    }
+
+    .paragraph-15 {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 11px;
+        text-decoration: none;
+    }
+
+    .div-block-24 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        margin-top: 40px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .link-block {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-right: 0px;
+        padding-left: 0px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 auto;
+        -ms-flex: 0 auto;
+        flex: 0 auto;
+    }
+
+    .div-block-25 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 300px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+        align-self: stretch;
+    }
+
+    .paragraph-16 {
+        margin-top: 140px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .link {
+        color: #8b8282;
+    }
+
+    .link-block-2 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .heading-9 {
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    .link-block-3 {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .linkblock-social {
+        margin-right: 10px;
+        margin-left: 10px;
+        background-color: transparent;
+        opacity: 0.5;
+        -webkit-transform: perspective(0px);
+        transform: perspective(0px);
+        color: #f30a0a;
+    }
+
+    .linkblock-social:hover {
+        opacity: 1;
+    }
+
+    .link-block-4 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 90%;
+        height: 300px;
+        margin-bottom: 54px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+    }
+
+    .div-block-26 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 900px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        background-image: url('../images/5c9d17e3231f7b008c9aa671_7Gifts.png');
+        background-position: 50% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+
+    .copy-over {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+        margin-bottom: 38px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .link-block-5 {
+        margin-top: 38px;
+    }
+
+    .text-span {
+        font-size: 18px;
+    }
+
+    .heading {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-family: 'Akzidenzgroteskbq ligex', sans-serif;
+        color: #000;
+        font-size: 27px;
+        line-height: 36px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .heading.right {
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+        font-size: 27px;
+        text-align: left;
+    }
+
+    .heading.left {
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        font-size: 27px;
+        text-align: right;
+    }
+
+    .image-18 {
+        -webkit-filter: saturate(200%);
+        filter: saturate(200%);
+    }
+
+    .text-span-footer-menu {
+        font-size: 18px;
+    }
+
+    .div-block-28 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.48);
+        background-color: #fff;
+        text-decoration: none;
+    }
+
+    .div-block-27 {
+        display: block;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    .link-block-6 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 38px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .underlinebox-2 {
+        display: block;
+        width: 100%;
+        height: 60px;
+        padding-top: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-top: 0px solid #000;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.48);
+        text-align: center;
+    }
+
+    .paragraph-17 {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 11px;
+        text-decoration: none;
+    }
+
+    .link-block-8 {
+        width: 100%;
+    }
+
+    .black-slice {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        background-color: #000;
+    }
+
+    .paragraph-18 {
+        width: 75%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        color: #000;
+        font-size: 18px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .paragraph-18.black {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: #000;
+        font-family: 'Akzidenzgroteskbq ext', sans-serif;
+        color: #fff;
+        font-size: 17px;
+    }
+
+    .columns {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 30px;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .columns.left {
+        margin-top: 30px;
+    }
+
+    .column {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .column-2 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .text-span-2 {
+        font-family: 'Akzidenzgroteskbq medext', sans-serif;
+        font-weight: 400;
+    }
+
+    .image-23 {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .logo-container {
+        position: relative;
+        display: block;
+        width: 650px;
+        height: 114px;
+        max-width: 650px;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-24 {
+        width: 650px;
+        max-width: 4225px;
+    }
+
+    .links {
+        width: 260px;
+        height: 65px;
+        padding-top: 22px;
+        background-color: #000;
+        text-align: center;
+    }
+
+    .text-block {
+        color: #fff;
+    }
+
+    .links-left {
+        width: 260px;
+        height: 65px;
+        padding-top: 22px;
+        background-color: #000;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 991px) {
+        .body {
+            background-color: transparent;
+        }
+
+        .logo {
+            min-width: 100%;
+        }
+
+        .div-block-2 {
+            width: 100%;
+        }
+
+        .sponge2 {
+            width: 100%;
+            padding-right: 0px;
+        }
+
+        .sponge {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            height: 0px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .h1_thin_100 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: 120%;
+            margin-bottom: 28px;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 auto;
+            -ms-flex: 0 auto;
+            flex: 0 auto;
+            font-size: 50px;
+            line-height: 55px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .div-block-4 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 80%;
+            height: auto;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .paragraph {
+            width: 80%;
+            margin-top: 40px;
+            padding-right: 0px;
+            padding-left: 0px;
+            text-align: center;
+        }
+
+        .copyblock {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin-bottom: 0px;
+            padding-right: 0px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .div-block-7 {
+            margin-top: 137px;
+        }
+
+        .sponge-copy {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            height: 0px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .popofcolor {
+            width: auto;
+            padding-right: 0px;
+            background-color: #fff;
+            background-repeat: no-repeat;
+        }
+
+        .image-2 {
+            width: 80%;
+        }
+
+        .ultra {
+            width: 100%;
+            padding-right: 0px;
+            background-color: #fff;
+        }
+
+        .container {
+            width: 100%;
+            margin-top: 0px;
+            margin-bottom: 11px;
+        }
+
+        .ultra2 {
+            width: auto;
+            padding-right: 0px;
+            background-color: #fff;
+            background-repeat: no-repeat;
+        }
+
+        .div-block-10 {
+            width: 100%;
+            height: 900px;
+        }
+
+        .more-is-more {
+            width: 100%;
+            padding-right: 0px;
+        }
+
+        .grid {
+            -ms-grid-rows: 3px 90px auto;
+            grid-template-rows: 3px 90px auto;
+        }
+
+        .div-block-11 {
+            height: 980px;
+        }
+
+        .div-block-14 {
+            background-size: cover;
+        }
+
+        .image-6 {
+            width: 100%;
+        }
+
+        .h1_300-normal {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 28px;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 auto;
+            -ms-flex: 0 auto;
+            flex: 0 auto;
+            font-size: 50px;
+            line-height: 55px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .sweet {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 28px;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 auto;
+            -ms-flex: 0 auto;
+            flex: 0 auto;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .akzidenz-bold {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 28px;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            -webkit-box-flex: 0;
+            -webkit-flex: 0 auto;
+            -ms-flex: 0 auto;
+            flex: 0 auto;
+            font-size: 50px;
+            line-height: 55px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .body-copy {
+            background-color: transparent;
+        }
+
+        .bodysweet {
+            background-color: transparent;
+        }
+
+        .image-15 {
+            width: 300px;
+        }
+
+        .copy-over {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin-bottom: 0px;
+            padding-right: 0px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .paragraph-18 {
+            width: 80%;
+            margin-top: 40px;
+            padding-right: 0px;
+            padding-left: 0px;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .h1_thin_100 {
+            margin-top: 54px;
+            margin-bottom: 32px;
+            font-size: 38px;
+            line-height: 39px;
+        }
+
+        .paragraph {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 80%;
+            margin-top: 41px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .copyblock {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: auto;
+            margin-bottom: 21px;
+            padding-right: 0px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .popofcolor {
+            background-repeat: no-repeat;
+        }
+
+        .heading-3 {
+            line-height: 22px;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            width: 100%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .ultra2 {
+            background-repeat: no-repeat;
+        }
+
+        .div-block-10 {
+            height: 700px;
+        }
+
+        .grid {
+            height: 890px;
+            -ms-grid-rows: 2px 90px auto;
+            grid-template-rows: 2px 90px auto;
+        }
+
+        .div-block-11 {
+            height: 820px;
+        }
+
+        .image-3 {
+            margin-top: 117px;
+        }
+
+        .grid-3 {
+            -ms-grid-rows: minmax(auto, 91px) auto auto;
+            grid-template-rows: minmax(auto, 91px) auto auto;
+        }
+
+        .image-5 {
+            margin-top: 102px;
+            padding-top: 0px;
+        }
+
+        .lips-animation {
+            width: 95%;
+            height: 520px;
+        }
+
+        .image-6 {
+            margin-top: 0px;
+        }
+
+        .logos-frame {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .smlogo {
+            width: 100%;
+            height: 1200px;
+        }
+
+        .h1_300-normal {
+            margin-top: 54px;
+            margin-bottom: 32px;
+            font-size: 38px;
+            line-height: 39px;
+        }
+
+        .h2-normal-300 {
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .sweet {
+            margin-top: 54px;
+            margin-bottom: 32px;
+            font-size: 400%;
+            line-height: 106%;
+        }
+
+        .h3-normal {
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .h4-normal-400 {
+            text-align: center;
+        }
+
+        .h5-normal {
+            text-align: center;
+        }
+
+        .h6-normal {
+            text-align: center;
+        }
+
+        .akzidenz-bold {
+            margin-top: 54px;
+            margin-bottom: 32px;
+            font-size: 38px;
+            line-height: 39px;
+        }
+
+        .azkidenz-h2-bold {
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .h3-normal-copy {
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .h3-bold-700 {
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .h4-bold-700 {
+            text-align: center;
+        }
+
+        .h5-bold-700 {
+            text-align: center;
+        }
+
+        .h6-normal-copy {
+            text-align: center;
+        }
+
+        .h6-bold-700 {
+            text-align: center;
+        }
+
+        .typographyframe {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .paragraph-title {
+            padding-bottom: 30px;
+        }
+
+        .paragraph-14 {
+            margin-bottom: 30px;
+        }
+
+        .image-15 {
+            width: 300px;
+        }
+
+        .checkbox-label {
+            padding-right: 0px;
+        }
+
+        .preference {
+            padding-right: 0px;
+        }
+
+        .copy-over {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: auto;
+            margin-bottom: 21px;
+            padding-right: 0px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background-color: #d0e5ee;
+        }
+
+        .paragraph-18 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 80%;
+            margin-top: 30px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .columns {
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .text-span-2 {
+            -webkit-align-self: flex-start;
+            -ms-flex-item-align: start;
+            align-self: flex-start;
+        }
+    }
+
+    @media screen and (max-width: 479px) {
+        .h1_thin_100 {
+            overflow: hidden;
+            margin-bottom: 22px;
+            font-size: 28px;
+            line-height: 32px;
+        }
+
+        .paragraph {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 90%;
+            margin-top: 30px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 16px;
+            line-height: 29px;
+        }
+
+        .paragraph.right {
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+            text-align: center;
+        }
+
+        .paragraph.left {
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+            text-align: center;
+        }
+
+        .copyblock {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: auto;
+            margin-top: 0px;
+            margin-bottom: 22px;
+            padding-right: 0px;
+            padding-left: 0px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .copyblock.right {
+            padding-left: 10px;
+        }
+
+        .copyblock.left {
+            margin-top: 30px;
+            margin-bottom: 0px;
+            padding-right: 10px;
+        }
+
+        .button {
+            overflow: hidden;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        .button.right {
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        }
+
+        .button.left {
+            padding-right: 30px;
+            padding-left: 30px;
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+            text-align: center;
+        }
+
+        .image {
+            width: 50%;
+            margin-top: 108px;
+        }
+
+        .popofcolor {
+            background-repeat: no-repeat;
+        }
+
+        .image-2 {
+            border: 2px solid #000;
+        }
+
+        .ultra {
+            background-color: #fff;
+        }
+
+        .heading-2 {
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 300;
+        }
+
+        .subhead2 {
+            font-size: 16px;
+        }
+
+        .heading-3 {
+            line-height: 22px;
+        }
+
+        .heading-4 {
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 19px;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .ultra2 {
+            background-repeat: no-repeat;
+        }
+
+        .div-block-10 {
+            height: 390px;
+            background-size: contain;
+        }
+
+        .grid {
+            height: 400px;
+            grid-template-areas: ".""."".";
+            -ms-grid-rows: 0px 90px auto;
+            grid-template-rows: 0px 90px auto;
+        }
+
+        .div-block-11 {
+            height: 500px;
+        }
+
+        .image-3 {
+            width: 100%;
+            margin-top: 111px;
+        }
+
+        .grid-3 {
+            grid-template-areas: ". . ."". . ."". . .";
+            -ms-grid-columns: 1fr 5fr 1fr;
+            grid-template-columns: 1fr 5fr 1fr;
+            -ms-grid-rows: minmax(auto, 81px) auto auto;
+            grid-template-rows: minmax(auto, 81px) auto auto;
+        }
+
+        .image-5 {
+            margin-top: 79px;
+        }
+
+        .lips-animation {
+            width: 95%;
+            height: 300px;
+        }
+
+        .div-block-20 {
+            height: 350px;
+        }
+
+        .lipsanim {
+            height: 320px;
+        }
+
+        .heading-5 {
+            overflow: hidden;
+            font-size: 22px;
+            line-height: 28px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .heading-6 {
+            font-size: 19px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .h4-thin-100 {
+            text-align: center;
+        }
+
+        .heading-7 {
+            text-align: center;
+        }
+
+        .heading-8 {
+            text-align: center;
+        }
+
+        .h1_300-normal {
+            margin-bottom: 22px;
+            font-size: 28px;
+            line-height: 32px;
+        }
+
+        .h2-normal-300 {
+            font-size: 22px;
+            line-height: 29px;
+            text-align: center;
+        }
+
+        .sweet {
+            margin-bottom: 22px;
+            font-size: 290%;
+        }
+
+        .h3-normal {
+            font-size: 19px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .h4-normal-400 {
+            text-align: center;
+        }
+
+        .h5-normal {
+            text-align: center;
+        }
+
+        .h6-normal {
+            text-align: center;
+        }
+
+        .akzidenz-bold {
+            margin-bottom: 22px;
+            font-size: 28px;
+            line-height: 32px;
+        }
+
+        .azkidenz-h2-bold {
+            font-size: 22px;
+            line-height: 29px;
+            text-align: center;
+        }
+
+        .h3-normal-copy {
+            font-size: 19px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .h3-bold-700 {
+            font-size: 19px;
+            line-height: 25px;
+            text-align: center;
+        }
+
+        .h4-bold-700 {
+            text-align: center;
+        }
+
+        .h5-bold-700 {
+            text-align: center;
+        }
+
+        .h6-normal-copy {
+            text-align: center;
+        }
+
+        .h6-bold-700 {
+            text-align: center;
+        }
+
+        .paragraph-12 {
+            padding-left: 19px;
+        }
+
+        .paragraph-14 {
+            max-width: 90%;
+            min-width: 80%;
+        }
+
+        .image-15 {
+            width: 80%;
+        }
+
+        .div-block-22 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .form-block {
+            width: 90%;
+        }
+
+        .checkbox-label {
+            padding-right: 0px;
+        }
+
+        .preference {
+            padding-right: 0px;
+        }
+
+        .heading-9 {
+            padding-right: 40px;
+            padding-left: 40px;
+            font-size: 36px;
+            line-height: 35px;
+            text-align: center;
+        }
+
+        .div-block-26 {
+            height: 700px;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            background-color: transparent;
+            background-position: 50% 0%;
+        }
+
+        .copy-over {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            height: auto;
+            margin-top: 100px;
+            margin-bottom: 22px;
+            padding-right: 0px;
+            padding-left: 0px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .image-17 {
+            margin-bottom: 40px;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .heading.right {
+            margin-top: 30px;
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+            text-align: center;
+        }
+
+        .heading.left {
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        }
+
+        .div-block-27 {
+            margin-top: 40px;
+            margin-right: auto;
+            margin-left: 10px;
+            padding-left: 0px;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-align-content: center;
+            -ms-flex-line-pack: center;
+            align-content: center;
+        }
+
+        .underlinebox-2 {
+            margin-top: 0px;
+        }
+
+        .image-22 {
+            max-width: 100%;
+        }
+
+        .paragraph-17 {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .black-slice {
+            margin-top: 30px;
+        }
+
+        .paragraph-18 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 90%;
+            margin-top: 30px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 16px;
+            line-height: 29px;
+        }
+
+        .columns {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .columns.left {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+        }
+
+        .text-span-2 {
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        }
+
+        .image-23 {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+    }
+
+    @font-face {
+        font-family: 'Akzidenzgroteskbq';
+        src: url('../fonts/AkzidenzGroteskBQ-BoldExIt.woff2') format('woff2'), url('../fonts/AkzidenzGroteskBQ-BoldExt.woff2') format('woff2'), url('../fonts/AkzidenzGroteskBQ-BoldExIt.eot') format('embedded-opentype'), url('../fonts/AkzidenzGroteskBQ-BoldExt.eot') format('embedded-opentype'), url('../fonts/AkzidenzGroteskBQ-BoldExt.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-BoldExIt.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-BoldExIt.ttf') format('truetype'), url('../fonts/AkzidenzGroteskBQ-BoldExt.ttf') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Akzidenzgroteskbq ext';
+        src: url('../fonts/AkzidenzGroteskBQ-Ext.woff2') format('woff2'), url('../fonts/AkzidenzGroteskBQ-Ext.eot') format('embedded-opentype'), url('../fonts/AkzidenzGroteskBQ-Ext.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-Ext.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Akzidenzgroteskbq ligex';
+        src: url('../fonts/AkzidenzGroteskBQ-LigEx.woff2') format('woff2'), url('../fonts/AkzidenzGroteskBQ-LigEx.eot') format('embedded-opentype'), url('../fonts/AkzidenzGroteskBQ-LigEx.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-LigEx.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Akzidenzgroteskbq extit';
+        src: url('../fonts/AkzidenzGroteskBQ-ExtIt.woff2') format('woff2'), url('../fonts/AkzidenzGroteskBQ-ExtIt.eot') format('embedded-opentype'), url('../fonts/AkzidenzGroteskBQ-ExtIt.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-ExtIt.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Akzidenzgroteskbq ligext';
+        src: url('../fonts/AkzidenzGroteskBQ-LigExt.woff2') format('woff2'), url('../fonts/AkzidenzGroteskBQ-LigExt.eot') format('embedded-opentype'), url('../fonts/AkzidenzGroteskBQ-LigExt.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-LigExt.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Akzidenzgroteskbq ligextit';
+        src: url('../fonts/AkzidenzGroteskBQ-LigExtIt.woff2') format('woff2'), url('../fonts/AkzidenzGroteskBQ-LigExtIt.eot') format('embedded-opentype'), url('../fonts/AkzidenzGroteskBQ-LigExtIt.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-LigExtIt.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Akzidenzgroteskbq medextit';
+        src: url('../fonts/AkzidenzGroteskBQ-MedExtIt.woff2') format('woff2'), url('../fonts/AkzidenzGroteskBQ-MedExtIt.eot') format('embedded-opentype'), url('../fonts/AkzidenzGroteskBQ-MedExtIt.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-MedExtIt.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Akzidenzgroteskbq medext';
+        src: url('../fonts/AkzidenzGroteskBQ-MedExt.woff2') format('woff2'), url('../fonts/AkzidenzGroteskBQ-MedExt.eot') format('embedded-opentype'), url('../fonts/AkzidenzGroteskBQ-MedExt.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-MedExt.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+
+
     @font-face {
         font-family: 'webflow-icons';
         src: url("data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg8SBiUAAAC8AAAAYGNtYXDpP+a4AAABHAAAAFxnYXNwAAAAEAAAAXgAAAAIZ2x5ZmhS2XEAAAGAAAADHGhlYWQTFw3HAAAEnAAAADZoaGVhCXYFgQAABNQAAAAkaG10eCe4A1oAAAT4AAAAMGxvY2EDtALGAAAFKAAAABptYXhwABAAPgAABUQAAAAgbmFtZSoCsMsAAAVkAAABznBvc3QAAwAAAAAHNAAAACAAAwP4AZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADpAwPA/8AAQAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAADAAAAAwAAABwAAQADAAAAHAADAAEAAAAcAAQAQAAAAAwACAACAAQAAQAg5gPpA//9//8AAAAAACDmAOkA//3//wAB/+MaBBcIAAMAAQAAAAAAAAAAAAAAAAABAAH//wAPAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEBIAAAAyADgAAFAAAJAQcJARcDIP5AQAGA/oBAAcABwED+gP6AQAABAOAAAALgA4AABQAAEwEXCQEH4AHAQP6AAYBAAcABwED+gP6AQAAAAwDAAOADQALAAA8AHwAvAAABISIGHQEUFjMhMjY9ATQmByEiBh0BFBYzITI2PQE0JgchIgYdARQWMyEyNj0BNCYDIP3ADRMTDQJADRMTDf3ADRMTDQJADRMTDf3ADRMTDQJADRMTAsATDSANExMNIA0TwBMNIA0TEw0gDRPAEw0gDRMTDSANEwAAAAABAJ0AtAOBApUABQAACQIHCQEDJP7r/upcAXEBcgKU/usBFVz+fAGEAAAAAAL//f+9BAMDwwAEAAkAABcBJwEXAwE3AQdpA5ps/GZsbAOabPxmbEMDmmz8ZmwDmvxmbAOabAAAAgAA/8AEAAPAAB0AOwAABSInLgEnJjU0Nz4BNzYzMTIXHgEXFhUUBw4BBwYjNTI3PgE3NjU0Jy4BJyYjMSIHDgEHBhUUFx4BFxYzAgBqXV6LKCgoKIteXWpqXV6LKCgoKIteXWpVSktvICEhIG9LSlVVSktvICEhIG9LSlVAKCiLXl1qal1eiygoKCiLXl1qal1eiygoZiEgb0tKVVVKS28gISEgb0tKVVVKS28gIQABAAABwAIAA8AAEgAAEzQ3PgE3NjMxFSIHDgEHBhUxIwAoKIteXWpVSktvICFmAcBqXV6LKChmISBvS0pVAAAAAgAA/8AFtgPAADIAOgAAARYXHgEXFhUUBw4BBwYHIxUhIicuAScmNTQ3PgE3NjMxOAExNDc+ATc2MzIXHgEXFhcVATMJATMVMzUEjD83NlAXFxYXTjU1PQL8kz01Nk8XFxcXTzY1PSIjd1BQWlJJSXInJw3+mdv+2/7c25MCUQYcHFg5OUA/ODlXHBwIAhcXTzY1PTw1Nk8XF1tQUHcjIhwcYUNDTgL+3QFt/pOTkwABAAAAAQAAmM7nP18PPPUACwQAAAAAANciZKUAAAAA1yJkpf/9/70FtgPDAAAACAACAAAAAAAAAAEAAAPA/8AAAAW3//3//QW2AAEAAAAAAAAAAAAAAAAAAAAMBAAAAAAAAAAAAAAAAgAAAAQAASAEAADgBAAAwAQAAJ0EAP/9BAAAAAQAAAAFtwAAAAAAAAAKABQAHgAyAEYAjACiAL4BFgE2AY4AAAABAAAADAA8AAMAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEADQAAAAEAAAAAAAIABwCWAAEAAAAAAAMADQBIAAEAAAAAAAQADQCrAAEAAAAAAAUACwAnAAEAAAAAAAYADQBvAAEAAAAAAAoAGgDSAAMAAQQJAAEAGgANAAMAAQQJAAIADgCdAAMAAQQJAAMAGgBVAAMAAQQJAAQAGgC4AAMAAQQJAAUAFgAyAAMAAQQJAAYAGgB8AAMAAQQJAAoANADsd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzVmVyc2lvbiAxLjAAVgBlAHIAcwBpAG8AbgAgADEALgAwd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzUmVndWxhcgBSAGUAZwB1AGwAYQByd2ViZmxvdy1pY29ucwB3AGUAYgBmAGwAbwB3AC0AaQBjAG8AbgBzRm9udCBnZW5lcmF0ZWQgYnkgSWNvTW9vbi4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==") format('truetype');
@@ -1414,7 +4473,7 @@
     }
 
     /*
- * 1. Remove default margin set by user-agent on the <figure style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin: 0;margin-bottom: 10px;"> element.
+ * 1. Remove default margin set by user-agent on the <figure> element.
  */
     .w-lightbox-figure {
         position: relative;
@@ -1490,7 +4549,7 @@
         display: none;
         bottom: 0;
         left: 0;
-        /* <svg xmlns="http://www.w3.org/2000/svg" viewbox="-20 0 24 40" width="24" height="40" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><g transform="rotate(45)" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><path d="m0 0h5v23h23v5h-28z" opacity=".4" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></path><path d="m1 1h3v23h23v3h-26z" fill="#fff" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></path></g></svg> */
+        /* <svg xmlns="http://www.w3.org/2000/svg" viewbox="-20 0 24 40" width="24" height="40"><g transform="rotate(45)"><path d="m0 0h5v23h23v5h-28z" opacity=".4"></path><path d="m1 1h3v23h23v3h-26z" fill="#fff"></path></g></svg> */
         background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yMCAwIDI0IDQwIiB3aWR0aD0iMjQiIGhlaWdodD0iNDAiPjxnIHRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHBhdGggZD0ibTAgMGg1djIzaDIzdjVoLTI4eiIgb3BhY2l0eT0iLjQiLz48cGF0aCBkPSJtMSAxaDN2MjNoMjN2M2gtMjZ6IiBmaWxsPSIjZmZmIi8+PC9nPjwvc3ZnPg==");
     }
 
@@ -1498,7 +4557,7 @@
         display: none;
         right: 0;
         bottom: 0;
-        /* <svg xmlns="http://www.w3.org/2000/svg" viewbox="-4 0 24 40" width="24" height="40" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><g transform="rotate(45)" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><path d="m0-0h28v28h-5v-23h-23z" opacity=".4" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></path><path d="m1 1h26v26h-3v-23h-23z" fill="#fff" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></path></g></svg> */
+        /* <svg xmlns="http://www.w3.org/2000/svg" viewbox="-4 0 24 40" width="24" height="40"><g transform="rotate(45)"><path d="m0-0h28v28h-5v-23h-23z" opacity=".4"></path><path d="m1 1h26v26h-3v-23h-23z" fill="#fff"></path></g></svg> */
         background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii00IDAgMjQgNDAiIHdpZHRoPSIyNCIgaGVpZ2h0PSI0MCI+PGcgdHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJtMC0waDI4djI4aC01di0yM2gtMjN6IiBvcGFjaXR5PSIuNCIvPjxwYXRoIGQ9Im0xIDFoMjZ2MjZoLTN2LTIzaC0yM3oiIGZpbGw9IiNmZmYiLz48L2c+PC9zdmc+");
     }
 
@@ -1510,7 +4569,7 @@
     .w-lightbox-close {
         right: 0;
         height: 2.6em;
-        /* <svg xmlns="http://www.w3.org/2000/svg" viewbox="-4 0 18 17" width="18" height="17" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><g transform="rotate(45)" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><path d="m0 0h7v-7h5v7h7v5h-7v7h-5v-7h-7z" opacity=".4" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></path><path d="m1 1h7v-7h3v7h7v3h-7v7h-3v-7h-7z" fill="#fff" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></path></g></svg> */
+        /* <svg xmlns="http://www.w3.org/2000/svg" viewbox="-4 0 18 17" width="18" height="17"><g transform="rotate(45)"><path d="m0 0h7v-7h5v7h7v5h-7v7h-5v-7h-7z" opacity=".4"></path><path d="m1 1h7v-7h3v7h7v3h-7v7h-3v-7h-7z" fill="#fff"></path></g></svg> */
         background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii00IDAgMTggMTciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyI+PGcgdHJhbnNmb3JtPSJyb3RhdGUoNDUpIj48cGF0aCBkPSJtMCAwaDd2LTdoNXY3aDd2NWgtN3Y3aC01di03aC03eiIgb3BhY2l0eT0iLjQiLz48cGF0aCBkPSJtMSAxaDd2LTdoM3Y3aDd2M2gtN3Y3aC0zdi03aC03eiIgZmlsbD0iI2ZmZiIvPjwvZz48L3N2Zz4=");
         background-size: 18px;
     }
@@ -2099,359 +5158,299 @@
     </figure>
 </style>
 
-<body class="bodysweet"
-    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin: 0;min-height: 100%;background-color: #fff;font-family: Arial, sans-serif;font-size: 14px;line-height: 20px;color: #333;">
-    <div class="container" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+
+
+
+<div class="bodysweet"
+    style="display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;background-color: #f7f7f7;font-family: 'Akzidenzgroteskbq ext', sans-serif;font-weight: 400;">
+    <div class="container"
+        style="display: flex;width: 100%;height: auto;max-width: 650px;margin-top: 0px;margin-bottom: 0px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;background-color: #fff;">
         <a href="https://www.elizabetharden.com/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Logo"
             target="_blank" class="w-inline-block"
-            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;display: inline-block;">
-            <div style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><img
-                    src="images/mobile-header.jpg" width="400" alt="Elizabeth Arden"
-                    srcset="images/mobile-header-p-500.jpeg 500w, images/mobile-header.jpg 768w"
-                    sizes="(max-width: 479px) 100vw, 400px"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;vertical-align: middle;display: inline-block;">
-            </div>
+            style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;">
+            <div class="logo-container"
+                style="position: relative;display: block;width: 650px;height: 114px;max-width: 650px;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;text-align: center;">
+                <img src="https://revlonemail.netlify.app/images/mobile-header.jpg" width="400" alt="Elizabeth Arden"
+                    srcset="https://revlonemail.netlify.app/images/mobile-header-p-500.jpeg 500w, https://revlonemail.netlify.app/images/mobile-header.jpg 768w"
+                    sizes="400px"></div>
         </a><a
             href="https://www.elizabetharden.com/face/foundation/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot1"
             target="_blank" class="w-inline-block"
-            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;display: inline-block;"><img
-                src="images/EA_social_application_superstart_crop.jpg" alt="Elizabeth Arden Foundations"
-                srcset="images/EA_social_application_superstart_crop-p-500.jpeg 500w, images/EA_social_application_superstart_crop-p-800.jpeg 800w, images/EA_social_application_superstart_crop-p-1080.jpeg 1080w, images/EA_social_application_superstart_crop-p-1600.jpeg 1600w, images/EA_social_application_superstart_crop.jpg 4480w"
-                sizes="(max-width: 991px) 100vw, 80vw"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;vertical-align: middle;display: inline-block;"></a><a
+            style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;"><img
+                src="https://revlonemail.netlify.app/images/EA_social_application_superstart_crop.jpg"
+                alt="Elizabeth Arden Foundations"
+                srcset="https://revlonemail.netlify.app/images/EA_social_application_superstart_crop-p-500.jpeg 500w, https://revlonemail.netlify.app/images/EA_social_application_superstart_crop-p-800.jpeg 800w, https://revlonemail.netlify.app/images/EA_social_application_superstart_crop-p-1080.jpeg 1080w, https://revlonemail.netlify.app/images/EA_social_application_superstart_crop-p-1600.jpeg 1600w, https://revlonemail.netlify.app/images/EA_social_application_superstart_crop.jpg 4480w"
+                sizes="(max-width: 479px) 100vw, 650px" class="image-24" style="width: 650px;max-width: 4225px;"></a><a
             id="Superstart-Probiotic-Boost-Skin-Renewal-Biocellulose-Mask"
             href="https://www.elizabetharden.com/superstart-probiotic-boost-skin-renewal-biocellulose-mask-1001A0112506.html?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190401_AprilFoolsEmail&amp;utm_content=Slot1"
             class="w-inline-block"
-            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;display: inline-block;"><img
-                src="blob:https://webflow.com/307b1e49-2d8d-4344-b3fc-169ad752df26" alt=""
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;vertical-align: middle;display: inline-block;"></a>
+            style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;"><img
+                src="blob:https://webflow.com/307b1e49-2d8d-4344-b3fc-169ad752df26" alt=""></a>
         <div class="copyblock"
-            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+            style="display: flex;width: 100%;height: auto;margin-top: 30px;margin-bottom: 30px;margin-left: 0px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: start;-webkit-justify-content: flex-start;-ms-flex-pack: start;justify-content: flex-start;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;background-color: transparent;">
             <h1 class="heading"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-weight: bold;margin-bottom: 10px;font-size: 38px;line-height: 44px;margin-top: 20px;">
-                SURE, YOU <br
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">&quot;WOKE
-                UP LIKE THIS&quot;</h1>
+                style="margin-top: 0px;margin-bottom: 0px;font-family: 'Akzidenzgroteskbq ligex', sans-serif;color: #000;font-size: 27px;line-height: 36px;font-weight: 400;text-align: center;">
+                SURE, YOU <br>&quot;WOKE UP LIKE THIS&quot;</h1>
             <p id="SUPERSTART-Skin-Renewal-Mask" class="paragraph"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin-top: 0;margin-bottom: 10px;">
-                Guarantee a good skin day with these beauty essentials
-                formulated for naturally flawless-looking skin.<br
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></p><a
-                id="SUPERSTART-MASK"
-                href="https://www.elizabetharden.com/face/foundation/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot1"
-                target="_blank" class="button w-button"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;padding: 9px 15px;background-color: #3898EC;color: white;border: 0;line-height: inherit;text-decoration: none;cursor: pointer;border-radius: 0;">WE
-                WON&#x27;T TELL</a>
+                style="width: 75%;margin-top: 30px;margin-bottom: 30px;margin-left: 0px;padding-right: 0px;padding-left: 0px;color: #000;font-size: 14px;line-height: 25px;text-align: center;">
+                Guarantee a good skin day with these beauty
+                essentials formulated for naturally flawless-looking skin.<br></p>
+            <a href="https://www.elizabetharden.com/face/foundation/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot1"
+                target="_blank" class="links w-inline-block"
+                style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;width: 260px;height: 65px;padding-top: 22px;background-color: #000;text-align: center;">
+                <div class="text-block" style="color: #fff;">WE WON&#x27;T TELL</div>
+            </a>
         </div>
         <div class="columns w-row"
-            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
-            <div class="column-2 w-col w-col-6"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;position: relative;float: left;width: 50%;min-height: 1px;padding-left: 10px;padding-right: 10px;">
-                <a href="https://www.elizabetharden.com/pure-finish-mineral-tinted-moisturizer-broad-spectrum-sunscreen-spf-15-1002TMPC400.html?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot2"
+            style="display: flex;margin-top: 30px;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;">
+            <div class="column-2 w-col w-col-6" style="padding-right: 0px;padding-left: 0px;"><a
+                    href="https://www.elizabetharden.com/pure-finish-mineral-tinted-moisturizer-broad-spectrum-sunscreen-spf-15-1002TMPC400.html?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot2"
                     target="_blank" class="w-inline-block"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;display: inline-block;"><img
-                        src="images/purefinish.jpg"
-                        alt="Pure Finish Mineral Tinted Moisturizer Broad Spectrum Sunscreen SPF 15"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;vertical-align: middle;display: inline-block;"></a>
-            </div>
-            <div class="column w-col w-col-6"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;position: relative;float: left;width: 50%;min-height: 1px;padding-left: 10px;padding-right: 10px;">
+                    style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;"><img
+                        src="https://revlonemail.netlify.app/images/purefinish.jpg"
+                        alt="Pure Finish Mineral Tinted Moisturizer Broad Spectrum Sunscreen SPF 15"></a></div>
+            <div class="column w-col w-col-6" style="padding-right: 0px;padding-left: 0px;">
                 <div class="copyblock right"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+                    style="display: flex;width: 100%;height: auto;margin-top: 30px;margin-bottom: 30px;margin-left: 0px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: start;-webkit-justify-content: flex-start;-ms-flex-pack: start;justify-content: flex-start;-webkit-box-align: start;-webkit-align-items: flex-start;-ms-flex-align: start;align-items: flex-start;background-color: transparent;padding-right: 10px;padding-left: 20px;">
                     <h1 class="heading right"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-weight: bold;margin-bottom: 10px;font-size: 38px;line-height: 44px;margin-top: 20px;">
-                        JUST A TINT<br
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
-                    </h1>
+                        style="margin-top: 0px;margin-bottom: 0px;font-family: 'Akzidenzgroteskbq ligex', sans-serif;color: #000;font-size: 27px;line-height: 36px;font-weight: 400;text-align: left;-webkit-align-self: flex-start;-ms-flex-item-align: start;align-self: flex-start;">
+                        JUST A TINT<br></h1>
                     <p class="paragraph right"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin-top: 0;margin-bottom: 10px;">
-                        Our Pure Finish Mineral Tinted Moisturizer SPF 15 perfects your complexion with
-                        sheer color and luminosity.<br
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
-                    </p><a id="SUPERSTART-MASK"
-                        href="https://www.elizabetharden.com/pure-finish-mineral-tinted-moisturizer-broad-spectrum-sunscreen-spf-15-1002TMPC400.html?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot2"
-                        target="_blank" class="button right w-button"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;padding: 9px 15px;background-color: #3898EC;color: white;border: 0;line-height: inherit;text-decoration: none;cursor: pointer;border-radius: 0;">BRIGHTEN
-                        UP</a>
+                        style="width: 95%;margin-top: 30px;margin-bottom: 30px;margin-left: 0px;padding-right: 0px;padding-left: 0px;color: #000;font-size: 14px;line-height: 25px;text-align: left;-webkit-align-self: flex-start;-ms-flex-item-align: start;align-self: flex-start;">
+                        Our Pure Finish Mineral Tinted Moisturizer SPF 15 perfects your
+                        complexion with sheer color and luminosity.<br></p>
+                    <a href="https://www.elizabetharden.com/pure-finish-mineral-tinted-moisturizer-broad-spectrum-sunscreen-spf-15-1002TMPC400.html?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot2"
+                        target="_blank" class="links-left w-inline-block"
+                        style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;width: 260px;height: 65px;padding-top: 22px;background-color: #000;text-align: center;">
+                        <div class="text-block" style="color: #fff;">BRIGHTEN UP</div>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="columns left w-row"
-            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
-            <div class="column-2 w-col w-col-6"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;position: relative;float: left;width: 50%;min-height: 1px;padding-left: 10px;padding-right: 10px;">
+            style="display: flex;margin-top: 30px;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;">
+            <div class="column-2 w-col w-col-6" style="padding-right: 0px;padding-left: 0px;">
                 <div class="copyblock left"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+                    style="display: flex;width: 100%;height: auto;margin-top: 30px;margin-bottom: 30px;margin-left: 0px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: start;-webkit-justify-content: flex-start;-ms-flex-pack: start;justify-content: flex-start;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;background-color: transparent;padding-right: 20px;padding-left: 10px;">
                     <h1 class="heading left"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-weight: bold;margin-bottom: 10px;font-size: 38px;line-height: 44px;margin-top: 20px;">
-                        SHOW MORE SKIN<br
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
-                    </h1>
+                        style="margin-top: 0px;margin-bottom: 0px;font-family: 'Akzidenzgroteskbq ligex', sans-serif;color: #000;font-size: 27px;line-height: 36px;font-weight: 400;text-align: right;-webkit-align-self: flex-end;-ms-flex-item-align: end;align-self: flex-end;">
+                        SHOW MORE SKIN<br></h1>
                     <p class="paragraph left"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin-top: 0;margin-bottom: 10px;">
-                        Our Flawless Finish Mousse Makeup is a light, airy formula perfect for the makeup
-                        minimalist who wants to show as much skin as possible.<br
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
-                    </p><a id="SUPERSTART-MASK"
-                        href="https://www.elizabetharden.com/flawless-finish-mousse-makeup-10021279400.html?dwvar_10021279400_color=d5af8f&amp;cgid=foundation&amp;utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot3"
-                        target="_blank" class="button left w-button"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;padding: 9px 15px;background-color: #3898EC;color: white;border: 0;line-height: inherit;text-decoration: none;cursor: pointer;border-radius: 0;">CAPTURE
-                        THE LIGHT</a>
+                        style="width: 100%;margin-top: 30px;margin-bottom: 30px;margin-left: 0px;padding-right: 0px;padding-left: 0px;color: #000;font-size: 16px;line-height: 25px;text-align: right;-webkit-align-self: flex-end;-ms-flex-item-align: end;align-self: flex-end;">
+                        Our Flawless Finish Mousse Makeup is a light, airy formula perfect for the
+                        makeup minimalist who wants to show as much skin as possible.<br></p>
+                    <a href="https://www.elizabetharden.com/flawless-finish-mousse-makeup-10021279400.html?dwvar_10021279400_color=d5af8f&amp;cgid=foundation&amp;utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot3"
+                        target="_blank" class="links-left w-inline-block"
+                        style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;width: 260px;height: 65px;padding-top: 22px;background-color: #000;text-align: center;">
+                        <div class="text-block" style="color: #fff;">CAPTURE THE LIGHT</div>
+                    </a>
                 </div>
             </div>
-            <div class="column w-col w-col-6"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;position: relative;float: left;width: 50%;min-height: 1px;padding-left: 10px;padding-right: 10px;">
-                <a href="https://www.elizabetharden.com/flawless-finish-mousse-makeup-10021279400.html?dwvar_10021279400_color=d5af8f&amp;cgid=foundation&amp;utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot3"
+            <div class="column w-col w-col-6" style="padding-right: 0px;padding-left: 0px;"><a
+                    href="https://www.elizabetharden.com/flawless-finish-mousse-makeup-10021279400.html?dwvar_10021279400_color=d5af8f&amp;cgid=foundation&amp;utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot3"
                     target="_blank" class="w-inline-block"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;display: inline-block;"><img
-                        src="images/flawlessfinish.jpg" alt="Flawless Finish Mousse Makeup"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;vertical-align: middle;display: inline-block;"></a>
-            </div>
+                    style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;"><img
+                        src="https://revlonemail.netlify.app/images/flawlessfinish.jpg"
+                        alt="Flawless Finish Mousse Makeup"></a></div>
         </div>
         <div class="columns w-row"
-            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
-            <div class="column-2 w-col w-col-6"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;position: relative;float: left;width: 50%;min-height: 1px;padding-left: 10px;padding-right: 10px;">
-                <a href="https://www.elizabetharden.com/prevage-progressive-renewal-treatment-1001A0116163.html?cgid=improve-skin-tone-texture&amp;utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot4"
+            style="display: flex;margin-top: 30px;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;">
+            <div class="column-2 w-col w-col-6" style="padding-right: 0px;padding-left: 0px;"><a
+                    href="https://www.elizabetharden.com/prevage-progressive-renewal-treatment-1001A0116163.html?cgid=improve-skin-tone-texture&amp;utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot4"
                     target="_blank" class="w-inline-block"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;display: inline-block;"><img
-                        src="images/20130310_02.gif" alt="PREVAGE® Progressive Renewal Treatment"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;vertical-align: middle;display: inline-block;"></a>
-            </div>
-            <div class="column w-col w-col-6"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;position: relative;float: left;width: 50%;min-height: 1px;padding-left: 10px;padding-right: 10px;">
+                    style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;"><img
+                        src="https://revlonemail.netlify.app/images/20130310_02.gif"
+                        alt="PREVAGE® Progressive Renewal Treatment"></a></div>
+            <div class="column w-col w-col-6" style="padding-right: 0px;padding-left: 0px;">
                 <div class="copyblock right"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+                    style="display: flex;width: 100%;height: auto;margin-top: 30px;margin-bottom: 30px;margin-left: 0px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: start;-webkit-justify-content: flex-start;-ms-flex-pack: start;justify-content: flex-start;-webkit-box-align: start;-webkit-align-items: flex-start;-ms-flex-align: start;align-items: flex-start;background-color: transparent;padding-right: 10px;padding-left: 20px;">
                     <h1 class="heading right"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-weight: bold;margin-bottom: 10px;font-size: 38px;line-height: 44px;margin-top: 20px;">
-                        SKIN IS IN<br
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
-                    </h1>
+                        style="margin-top: 0px;margin-bottom: 0px;font-family: 'Akzidenzgroteskbq ligex', sans-serif;color: #000;font-size: 27px;line-height: 36px;font-weight: 400;text-align: left;-webkit-align-self: flex-start;-ms-flex-item-align: start;align-self: flex-start;">
+                        SKIN IS IN<br></h1>
                     <p class="paragraph right"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin-top: 0;margin-bottom: 10px;">
-                        PREVAGE® Progressive Renewal is an at-home peeling treatment that will help
-                        transform your skin in just 28 days, so you can go bare-faced ASAP.<br
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
-                    </p><a id="SUPERSTART-MASK"
-                        href="https://www.elizabetharden.com/prevage-progressive-renewal-treatment-1001A0116163.html?cgid=improve-skin-tone-texture&amp;utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot4"
-                        target="_blank" class="button right w-button"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;padding: 9px 15px;background-color: #3898EC;color: white;border: 0;line-height: inherit;text-decoration: none;cursor: pointer;border-radius: 0;">GO
-                        BARE</a>
+                        style="width: 95%;margin-top: 30px;margin-bottom: 30px;margin-left: 0px;padding-right: 0px;padding-left: 0px;color: #000;font-size: 14px;line-height: 25px;text-align: left;-webkit-align-self: flex-start;-ms-flex-item-align: start;align-self: flex-start;">
+                        PREVAGE® Progressive Renewal is an at-home peeling treatment that will
+                        help transform your skin in just 28 days, so you can go bare-faced ASAP.<br></p>
+                    <a href="https://www.elizabetharden.com/prevage-progressive-renewal-treatment-1001A0116163.html?cgid=improve-skin-tone-texture&amp;utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot4"
+                        target="_blank" class="links-left w-inline-block"
+                        style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;width: 260px;height: 65px;padding-top: 22px;background-color: #000;text-align: center;">
+                        <div class="text-block" style="color: #fff;">GO BARE</div>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="columns left w-row"
-            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
-            <div class="column-2 w-col w-col-6"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;position: relative;float: left;width: 50%;min-height: 1px;padding-left: 10px;padding-right: 10px;">
+            style="display: flex;margin-top: 30px;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;">
+            <div class="column-2 w-col w-col-6" style="padding-right: 0px;padding-left: 0px;">
                 <div class="copyblock left"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+                    style="display: flex;width: 100%;height: auto;margin-top: 30px;margin-bottom: 30px;margin-left: 0px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: start;-webkit-justify-content: flex-start;-ms-flex-pack: start;justify-content: flex-start;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;background-color: transparent;padding-right: 20px;padding-left: 10px;">
                     <h1 class="heading left"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;font-weight: bold;margin-bottom: 10px;font-size: 38px;line-height: 44px;margin-top: 20px;">
-                        TEA IS SERVED<br
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
-                    </h1>
+                        style="margin-top: 0px;margin-bottom: 0px;font-family: 'Akzidenzgroteskbq ligex', sans-serif;color: #000;font-size: 27px;line-height: 36px;font-weight: 400;text-align: right;-webkit-align-self: flex-end;-ms-flex-item-align: end;align-self: flex-end;">
+                        TEA IS SERVED<br></h1>
                     <p class="paragraph left"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin-top: 0;margin-bottom: 10px;">
-                        Treat yourself to a White Tea Deluxe Mini, perfect for layering with your favorite
-                        fragrance, with any $80+ order. <br
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><br
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Use
-                        code: <span class="text-span-2"
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">CELEBRATE</span><br
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
-                    </p><a id="SUPERSTART-MASK"
-                        href="https://www.elizabetharden.com/special-offers/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot5"
-                        target="_blank" class="button left w-button"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;display: inline-block;padding: 9px 15px;background-color: #3898EC;color: white;border: 0;line-height: inherit;text-decoration: none;cursor: pointer;border-radius: 0;">ENJOY
-                        YOUR MOMENT</a>
+                        style="width: 100%;margin-top: 30px;margin-bottom: 30px;margin-left: 0px;padding-right: 0px;padding-left: 0px;color: #000;font-size: 16px;line-height: 25px;text-align: right;-webkit-align-self: flex-end;-ms-flex-item-align: end;align-self: flex-end;">
+                        Treat yourself to a White Tea Deluxe Mini, perfect for layering with your
+                        favorite fragrance, with any $80+ order. <br><br>Use code: <span class="text-span-2"
+                            style="font-family: 'Akzidenzgroteskbq medext', sans-serif;font-weight: 400;">CELEBRATE</span><br>
+                    </p>
+                    <a href="https://www.elizabetharden.com/special-offers/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot5"
+                        target="_blank" class="links-left w-inline-block"
+                        style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;width: 260px;height: 65px;padding-top: 22px;background-color: #000;text-align: center;">
+                        <div class="text-block" style="color: #fff;">ENJOY YOUR MOMENT</div>
+                    </a>
                 </div>
             </div>
-            <div class="column w-col w-col-6"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;position: relative;float: left;width: 50%;min-height: 1px;padding-left: 10px;padding-right: 10px;">
-                <a href="https://www.elizabetharden.com/special-offers/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot5"
+            <div class="column w-col w-col-6" style="padding-right: 0px;padding-left: 0px;"><a
+                    href="https://www.elizabetharden.com/special-offers/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Slot5"
                     target="_blank" class="w-inline-block"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;display: inline-block;"><img
-                        src="images/whitetea.jpg" alt="White Tea Deluxe Mini" class="image-23"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;vertical-align: middle;display: inline-block;"></a>
-            </div>
+                    style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;"><img
+                        src="https://revlonemail.netlify.app/images/whitetea.jpg" alt="White Tea Deluxe Mini"
+                        class="image-23" style="padding-right: 20px;padding-left: 20px;"></a></div>
         </div>
         <a href="https://www.elizabetharden.com/shipping-option-cost.html?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Shipping"
             target="_blank" class="link-block-8 w-inline-block"
-            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;display: inline-block;">
+            style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;width: 100%;">
             <div class="black-slice"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+                style="display: flex;width: 100%;padding-top: 30px;padding-bottom: 30px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;-webkit-align-self: center;-ms-flex-item-align: center;align-self: center;background-color: #000;">
                 <p class="paragraph-18 black"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin-top: 0;margin-bottom: 10px;">
-                    Mother&#x27;s Day Shipping Cut Off Dates<br
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><br
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Ground
-                    - May 2nd @ 3PM EST<br
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">2nd
-                    Day - May 8th @ 3PM EST<br
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Overnight
-                    - May 10th @ 3PM EST<br
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></p>
+                    style="width: 75%;margin-top: 0px;margin-bottom: 0px;margin-left: 0px;padding-right: 0px;padding-left: 0px;color: #fff;font-size: 17px;line-height: 35px;text-align: center;background-color: #000;font-family: 'Akzidenzgroteskbq ext', sans-serif;">
+                    Mother&#x27;s Day Shipping Cut Off Dates<br><br>Ground - May 2nd @ 3PM
+                    EST<br>2nd Day - May 8th @ 3PM EST<br>Overnight - May 10th @ 3PM EST<br></p>
             </div>
         </a>
-        <div class="footer" style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+        <div class="footer">
             <div class="sponge2"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+                style="display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;">
                 <div class="text"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></div>
+                    style="display: flex;width: 100%;height: auto;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: start;-webkit-justify-content: flex-start;-ms-flex-pack: start;justify-content: flex-start;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;background-color: transparent;">
+                </div>
             </div>
             <div class="sponge2"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+                style="display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;">
                 <div class="text"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></div>
+                    style="display: flex;width: 100%;height: auto;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: start;-webkit-justify-content: flex-start;-ms-flex-pack: start;justify-content: flex-start;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;background-color: transparent;">
+                </div>
             </div><a
                 href="https://www.elizabetharden.com/contact-us.html?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=ChatSpecialist"
                 target="_blank" class="link-block-6 w-inline-block"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;display: inline-block;"><img
-                    src="images/Bottom_CHAT_WITH_A_SPECIALIST_01.jpg" alt="Elizabeth Arden Specialist"
-                    srcset="images/Bottom_CHAT_WITH_A_SPECIALIST_01-p-500.jpeg 500w, images/Bottom_CHAT_WITH_A_SPECIALIST_01.jpg 640w"
-                    sizes="(max-width: 640px) 100vw, 640px" class="image-22"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;vertical-align: middle;display: inline-block;"></a>
+                style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;display: flex;margin-top: 38px;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;text-align: left;"><img
+                    src="https://revlonemail.netlify.app/images/Bottom_CHAT_WITH_A_SPECIALIST_01.jpg"
+                    alt="Elizabeth Arden Specialist"
+                    srcset="https://revlonemail.netlify.app/images/Bottom_CHAT_WITH_A_SPECIALIST_01-p-500.jpeg 500w, https://revlonemail.netlify.app/images/Bottom_CHAT_WITH_A_SPECIALIST_01.jpg 640w"
+                    sizes="(max-width: 640px) 100vw, 640px" class="image-22"></a>
             <div class="div-block-27"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><a
-                    href="https://www.facebook.com/elizabethardenUS?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Facebook"
+                style="display: block;width: 100%;margin-top: 40px;margin-bottom: 20px;margin-left: 10px;-webkit-box-orient: horizontal;-webkit-box-direction: normal;-webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-align-self: center;-ms-flex-item-align: center;-ms-grid-row-align: center;align-self: center;text-align: center;">
+                <a href="https://www.facebook.com/elizabethardenUS?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Facebook"
                     target="_blank" class="linkblock-social w-inline-block"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;display: inline-block;"><img
-                        src="images/facebookcircle.png" width="50" height="50" alt="Elizabeth Arden Facebook"
-                        class="image-18"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;vertical-align: middle;display: inline-block;"></a><a
+                    style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #f30a0a;text-decoration: none;margin-right: 10px;margin-left: 10px;background-color: transparent;opacity: 0.5;-webkit-transform: perspective(0px);transform: perspective(0px);"><img
+                        src="https://revlonemail.netlify.app/images/facebookcircle.png" width="50" height="50"
+                        alt="Elizabeth Arden Facebook" class="image-18"
+                        style="-webkit-filter: saturate(200%);filter: saturate(200%);"></a><a
                     href="https://twitter.com/ElizabethArden?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Twitter"
                     target="_blank" class="linkblock-social w-inline-block"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;display: inline-block;"><img
-                        src="images/twitter777.png" width="50" height="50" alt="Elizabeth Arden Twitter"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;vertical-align: middle;display: inline-block;"></a><a
+                    style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #f30a0a;text-decoration: none;margin-right: 10px;margin-left: 10px;background-color: transparent;opacity: 0.5;-webkit-transform: perspective(0px);transform: perspective(0px);"><img
+                        src="https://revlonemail.netlify.app/images/twitter777.png" width="50" height="50"
+                        alt="Elizabeth Arden Twitter"></a><a
                     href="https://www.instagram.com/elizabetharden/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Instagram"
                     target="_blank" class="linkblock-social w-inline-block"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;display: inline-block;"><img
-                        src="images/instacircle777.png" width="50" height="50" alt="Elizabeth Arden Instagram"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;vertical-align: middle;display: inline-block;"></a><a
+                    style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #f30a0a;text-decoration: none;margin-right: 10px;margin-left: 10px;background-color: transparent;opacity: 0.5;-webkit-transform: perspective(0px);transform: perspective(0px);"><img
+                        src="https://revlonemail.netlify.app/images/instacircle777.png" width="50" height="50"
+                        alt="Elizabeth Arden Instagram"></a><a
                     href="https://www.youtube.com/user/ElizabethArdenBeauty?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Youtube"
                     target="_blank" class="linkblock-social w-inline-block"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;display: inline-block;"><img
-                        src="images/youtubecirce.png" width="50" height="50" alt="Elizabeth Arden Youtube"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;vertical-align: middle;display: inline-block;"></a><a
+                    style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #f30a0a;text-decoration: none;margin-right: 10px;margin-left: 10px;background-color: transparent;opacity: 0.5;-webkit-transform: perspective(0px);transform: perspective(0px);"><img
+                        src="https://revlonemail.netlify.app/images/youtubecirce.png" width="50" height="50"
+                        alt="Elizabeth Arden Youtube"></a><a
                     href="https://www.youtube.com/user/ElizabethArdenBeauty?utm_source=Campaign&amp;utm_medium=EMAIL&amp;utm_content=YouTube&amp;utm_campaign=20181216_US_HOLIDAY_MAKEUP_LOOK_Milled&amp;j=36633125&amp;sfmc_sub=428983772&amp;l=1137978_HTML&amp;u=435790661&amp;mid=10387033&amp;jb=0"
                     class="link-block w-inline-block"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;max-width: 100%;display: inline-block;"></a>
+                    style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;display: flex;margin-right: 10px;margin-left: 10px;padding-right: 0px;padding-left: 0px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;-webkit-box-flex: 0;-webkit-flex: 0 auto;-ms-flex: 0 auto;flex: 0 auto;"></a>
             </div>
             <div class="div-block-28"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+                style="display: flex;width: 100%;margin-top: 10px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;border-top: 1px solid rgba(0, 0, 0, 0.48);background-color: #fff;text-decoration: none;">
                 <div class="underlinebox-2"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><a
-                        href="https://www.elizabetharden.com/skincare/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=SkincareFooter"
+                    style="display: block;width: 100%;height: 60px;padding-top: 20px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;border-top: 0px solid #000;border-bottom: 1px solid rgba(0, 0, 0, 0.48);text-align: center;">
+                    <a href="https://www.elizabetharden.com/skincare/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=SkincareFooter"
                         target="_blank" class="linka"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><span
-                            class="text-span-footer-menu"
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">SKIN
-                            CARE<br
-                                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></span></a>
+                        style="font-family: 'Akzidenzgroteskbq ext', sans-serif;color: #000;text-decoration: none;margin-top: 20px;margin-bottom: 20px;text-align: center;-webkit-column-span: none;column-span: none;"><span
+                            class="text-span-footer-menu" style="font-size: 18px;">SKIN CARE<br></span></a></div>
+                <div class="underlinebox-2"
+                    style="display: block;width: 100%;height: 60px;padding-top: 20px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;border-top: 0px solid #000;border-bottom: 1px solid rgba(0, 0, 0, 0.48);text-align: center;">
+                    <a href="https://www.elizabetharden.com/makeup/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=MakeupFooter"
+                        target="_blank" class="linka"
+                        style="font-family: 'Akzidenzgroteskbq ext', sans-serif;color: #000;text-decoration: none;margin-top: 20px;margin-bottom: 20px;text-align: center;-webkit-column-span: none;column-span: none;"><span
+                            class="text-span-footer-menu" style="font-size: 18px;">MAKEUP<br></span></a></div>
+                <div class="underlinebox-2"
+                    style="display: block;width: 100%;height: 60px;padding-top: 20px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;border-top: 0px solid #000;border-bottom: 1px solid rgba(0, 0, 0, 0.48);text-align: center;">
+                    <a href="https://www.elizabetharden.com/fragrance/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=FragranceFooter"
+                        target="_blank" class="linka"
+                        style="font-family: 'Akzidenzgroteskbq ext', sans-serif;color: #000;text-decoration: none;margin-top: 20px;margin-bottom: 20px;text-align: center;-webkit-column-span: none;column-span: none;"><span
+                            class="text-span-footer-menu" style="font-size: 18px;">FRAGRANCE<br></span></a></div>
+                <div class="underlinebox-2"
+                    style="display: block;width: 100%;height: 60px;padding-top: 20px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;border-top: 0px solid #000;border-bottom: 1px solid rgba(0, 0, 0, 0.48);text-align: center;">
+                    <a href="https://www.elizabetharden.com/prevage/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=PrevageFooter"
+                        target="_blank" class="linka"
+                        style="font-family: 'Akzidenzgroteskbq ext', sans-serif;color: #000;text-decoration: none;margin-top: 20px;margin-bottom: 20px;text-align: center;-webkit-column-span: none;column-span: none;"><span
+                            class="text-span-footer-menu" style="font-size: 18px;">PREVAGE®<br></span></a></div>
+                <div class="underlinebox-2"
+                    style="display: block;width: 100%;height: 60px;padding-top: 20px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;border-top: 0px solid #000;border-bottom: 1px solid rgba(0, 0, 0, 0.48);text-align: center;">
+                    <a href="https://www.elizabetharden.com/eight-hour-cream.html?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=EightHourFooter"
+                        target="_blank" class="linka"
+                        style="font-family: 'Akzidenzgroteskbq ext', sans-serif;color: #000;text-decoration: none;margin-top: 20px;margin-bottom: 20px;text-align: center;-webkit-column-span: none;column-span: none;"><span
+                            class="text-span-footer-menu" style="font-size: 18px;">EIGHT HOUR®<br></span></a>
                 </div>
                 <div class="underlinebox-2"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><a
-                        href="https://www.elizabetharden.com/makeup/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=MakeupFooter"
+                    style="display: block;width: 100%;height: 60px;padding-top: 20px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;border-top: 0px solid #000;border-bottom: 1px solid rgba(0, 0, 0, 0.48);text-align: center;">
+                    <a href="https://www.elizabetharden.com/special-offers/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=OffersFooter"
                         target="_blank" class="linka"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><span
-                            class="text-span-footer-menu"
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">MAKEUP<br
-                                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></span></a>
-                </div>
+                        style="font-family: 'Akzidenzgroteskbq ext', sans-serif;color: #000;text-decoration: none;margin-top: 20px;margin-bottom: 20px;text-align: center;-webkit-column-span: none;column-span: none;"><span
+                            class="text-span-footer-menu" style="font-size: 18px;">OFFERS<br></span></a></div>
                 <div class="underlinebox-2"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><a
-                        href="https://www.elizabetharden.com/fragrance/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=FragranceFooter"
+                    style="display: block;width: 100%;height: 60px;padding-top: 20px;-webkit-box-orient: vertical;-webkit-box-direction: normal;-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;border-top: 0px solid #000;border-bottom: 1px solid rgba(0, 0, 0, 0.48);text-align: center;">
+                    <a href="https://www.elizabetharden.com/reese-witherspoon.html?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=ArdenReeseFooter"
                         target="_blank" class="linka"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><span
-                            class="text-span-footer-menu"
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">FRAGRANCE<br
-                                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></span></a>
-                </div>
-                <div class="underlinebox-2"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><a
-                        href="https://www.elizabetharden.com/prevage/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=PrevageFooter"
-                        target="_blank" class="linka"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><span
-                            class="text-span-footer-menu"
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">PREVAGE®<br
-                                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></span></a>
-                </div>
-                <div class="underlinebox-2"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><a
-                        href="https://www.elizabetharden.com/eight-hour-cream.html?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=EightHourFooter"
-                        target="_blank" class="linka"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><span
-                            class="text-span-footer-menu"
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">EIGHT
-                            HOUR®<br
-                                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></span></a>
-                </div>
-                <div class="underlinebox-2"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><a
-                        href="https://www.elizabetharden.com/special-offers/?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=OffersFooter"
-                        target="_blank" class="linka"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><span
-                            class="text-span-footer-menu"
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">OFFERS<br
-                                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></span></a>
-                </div>
-                <div class="underlinebox-2"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><a
-                        href="https://www.elizabetharden.com/reese-witherspoon.html?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=ArdenReeseFooter"
-                        target="_blank" class="linka"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><span
-                            class="text-span-footer-menu"
-                            style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">#ARDENXREESE<br
-                                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"></span></a>
+                        style="font-family: 'Akzidenzgroteskbq ext', sans-serif;color: #000;text-decoration: none;margin-top: 20px;margin-bottom: 20px;text-align: center;-webkit-column-span: none;column-span: none;"><span
+                            class="text-span-footer-menu" style="font-size: 18px;">#ARDENXREESE<br></span></a>
                 </div>
             </div>
-            <div class="div-block-17"
-                style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">
+            <div class="div-block-17" style="width: 100%;">
                 <p class="paragraph-17"
-                    style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;margin-top: 0;margin-bottom: 10px;">
-                    To receive 7 free complimentary gifts, Spend $60 and enter code <strong
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">MOM</strong>
-                    during checkout at elizabetharden.com. Plus, to receive free White Tea Deluxe Mini (0.3oz), Spend
-                    $80 and
-                    enter code CELEBRATE during checkout at elizabetharden.com. Offers expire on 5/13/2019 at 2:59 am
-                    EST. One per
-                    customer, while supplies last. Shipping offer only valid in the continental United States. Excludes
-                    P.O. Box
-                    deliveries. Not valid on past purchases. Offers are not exchangeable for cash or credit toward
-                    products.
-                    Offers subject to change without notice. Offer may not combine with any other offers.<br
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;"><br
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">You
-                    are receiving
-                    this email because you have signed up for the Elizabeth Arden email list at www.elizabetharden.com.
-                    <br style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">To
-                    update your subscription status or unsubscribe go to the subscription center. <br
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">©
-                    2019 Elizabeth Arden,
-                    Inc., 1 New York Plaza 49th Floor, New York, NY 10004, USA <br
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">‍<br
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">All
-                    Rights Reserved. <a
+                    style="margin-top: 20px;margin-bottom: 40px;padding-right: 20px;padding-left: 20px;font-size: 11px;text-decoration: none;">
+                    To receive 7 free complimentary gifts, Spend $60 and enter code
+                    <strong>MOM</strong> during checkout at elizabetharden.com. Plus, to receive free White Tea Deluxe
+                    Mini (0.3oz), Spend $80 and enter code CELEBRATE during checkout at elizabetharden.com. Offers
+                    expire on 5/13/2019 at 2:59 am EST. One per customer, while supplies last. Shipping offer only valid
+                    in the continental United States. Excludes P.O. Box deliveries. Not valid on past purchases. Offers
+                    are not exchangeable for cash or credit toward products. Offers subject to change without notice.
+                    Offer may not combine with any other offers.<br><br>You are receiving this email because you have
+                    signed up for the Elizabeth Arden email list at www.elizabetharden.com. <br>To update your
+                    subscription status or unsubscribe go to the subscription center. <br>© 2019 Elizabeth Arden, Inc.,
+                    1 New York Plaza 49th Floor, New York, NY 10004, USA <br>‍<br>All Rights Reserved. <a
                         href="http://click.offers.elizabetharden.com/profile_center.aspx?qs=3bc59d3c2642b8fb0aec553c408b66533398f8a30a42302520e267bf3684ca0db3a68c4d01c5372d5ba344529786ca83f8bf555b74fb84eedac649658189e25b6a9c0fd175b9d84e"
                         target="_blank"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Subscription
+                        style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;">Subscription
                         Center</a> | <a
                         href="https://www.elizabetharden.com/web-accessibility.html?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=WebAccessibility"
                         target="_blank"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Web
+                        style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;">Web
                         Accessibility</a> | <a
                         href="https://www.elizabetharden.com/terms.html?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=Terms"
                         target="_blank"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Terms
+                        style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;">Terms
                         &amp; Conditions</a> | <a
                         href="https://www.elizabetharden.com/privacy-and-policy.html?utm_source=Campaign&amp;utm_medium=Email&amp;utm_campaign=20190430_NoMakeupMakeup_Email&amp;utm_content=PrivacyPolicy"
                         target="_blank"
-                        style="-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;">Privacy</a>
+                        style="font-family: 'Akzidenzgroteskbq medext', sans-serif;color: #c30606;text-decoration: none;">Privacy</a>
                 </p>
             </div>
         </div>
     </div>
-
-</body>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ecfc910fa956911b67c9986"
+        type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="js/webflow.js" type="text/javascript"></script>
+    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+    <!--  Google Tag Manager (noscript)  -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55PQ9TX" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!--  End Google Tag Manager (noscript)  -->
+</div>
